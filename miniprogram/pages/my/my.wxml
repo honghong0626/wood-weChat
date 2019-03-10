@@ -1,0 +1,29 @@
+<view class="container">
+ <view class="header">
+  <image src="../../images/my/my@bg.png" class="header-bg" />
+  <w-btn wx:if="{{!isSetting}}" class="userInfo" openType="getUserInfo" bind:userInfo="getUserInfo">
+   <image src="../../images/my/my.png" class="btn-img" slot="btnImg" />
+  </w-btn>
+   <view class="nickName" wx:if="{{isSetting}}">
+     <image src="{{rawData.avatarUrl}}"/>
+     <text>{{rawData.nickName}}</text>
+   </view>
+ 
+  <view class="about">
+   <image src="../../images/my/about.png" />
+   <text>关于我们</text>
+  </view>
+  <view class="count">
+   <text class="num">{{count}}</text>
+   <text class="bookMenu">我的书单</text>
+  </view>
+ </view>
+ <view class="favorite">
+  <image src="../../images/my/like.png" />
+  <view class="favorite-box">
+   <block wx:for="{{favorites}}" wx:key="{{item.title}}">
+    <w-preview favorites="{{item}}"></w-preview>
+   </block>
+  </view>
+ </view>
+</view>

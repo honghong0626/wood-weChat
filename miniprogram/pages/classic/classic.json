@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "w-like": "/components/like/index",
+    "w-move": "/components/classic/move/index",
+    "w-episode": "/components/episode/index",
+    "w-essay": "/components/classic/essay/index",
+    "w-music": "/components/classic/music/index",
+    "w-navi": "/components/navi/index",
+    "w-btn":"/components/btn/index"
+  }
+}

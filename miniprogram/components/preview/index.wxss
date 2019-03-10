@@ -1,0 +1,43 @@
+/* components/preview/index.wxss */
+.container{
+ width:330rpx;
+ height:470rpx;
+ box-shadow:2rpx 2rpx 10rpx 2rpx #bababa;
+ background:#fff;
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+}
+.header{
+ width:290rpx;
+ height:80rpx;
+ display:flex;
+ flex-direction:row;
+ justify-content: space-between;
+ align-items: center;
+ padding:0 20rpx;
+}
+.container .classicImg{
+ width:100%;
+ height:240rpx;
+}
+.container .musicImg{
+ width:200rpx;
+ height:200rpx;
+ overflow:hidden;
+ border-radius:50%;
+}
+.container>text{
+ width:290rpx;
+ font-size:28rpx;
+ color:#999999;
+ padding:0 20rpx;
+/*  white-space:nowrap;
+ text-overflow: ellipsis;
+ line-clamp: 2;
+ overflow:hidden; */
+ display: -webkit-box;
+/* -webkit-box-orient: vertical; */
+-webkit-line-clamp: 3;
+overflow: hidden;
+}

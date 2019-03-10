@@ -1,0 +1,101 @@
+/* miniprogram/pages/my/my.wxss */
+.header {
+ height: 570rpx;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.header-bg {
+ width: 100%;
+ height: 100%;
+}
+w-btn{
+ width:120rpx;
+ height:120rpx;
+ border-radius:50%;
+ overflow:hidden;
+}
+w-btn,.nickName {
+ position: absolute;
+ top: 252rpx;
+ width:120rpx;
+}
+.nickName>text{
+ font-size:34rpx;
+ position: absolute;
+ top:140rpx;
+}
+w-btn .btn-img,.nickName>image {
+ position: absolute;
+ width: 120rpx;
+ height: 120rpx;
+ overflow:hidden;
+ border-radius:50%;
+}
+
+.about>image {
+ width: 34rpx;
+ height: 34rpx;
+
+}
+
+.about>text,
+.bookMenu {
+ color: #999;
+ font-size: 24rpx;
+ margin-top: 20rpx;
+}
+
+.count .num {
+ font-size: 36rpx;
+}
+
+.about,
+.count {
+ position: absolute;
+ width: 50%;
+ top: 442rpx;
+ z-index: 1;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.about {
+ left: 0;
+}
+
+.count {
+ right: 0;
+ top: 424rpx;
+}
+
+.favorite {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 40rpx;
+}
+
+.favorite>image {
+ width: 97rpx;
+ height: 42rpx;
+ margin: 40rpx 0;
+}
+
+.setting {
+ text-align: center;
+ margin-top: 40rpx;
+}
+.favorite-box{
+ margin-top: 10rpx;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ padding: 0 30rpx;
+}
+w-preview{
+ margin-bottom:30rpx;
+}

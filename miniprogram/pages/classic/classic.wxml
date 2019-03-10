@@ -1,0 +1,17 @@
+<!-- miniprogram/pages/classic.wxml -->
+<wxs module="classicWxs" src="./classic.wxs"></wxs>
+<view class="container">
+ <view class="header">
+   <w-episode class="episode" index="{{classicWxs.Addprefix(classic.index)}}" date="{{classicWxs.Pubdate(classic.pubdate)}}" />
+  <view class="header-right">
+   <w-like class="like" unlike="{{like_status}}" count="{{fav_nums}}" bind:like="onLike" />
+   <w-btn open-type="share" class="share">
+    <image src="../../images/icon/share.png" slot="btnImg" />
+   </w-btn>
+  </view>
+ </view>
+ <w-move wx:if="{{classic.type==100}}" moveImg="{{classic.image}}" content="{{classic.content}}" />
+ <w-music wx:if="{{classic.type==200}}" moveImg="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}" title="{{classic.title}}" />
+ <w-essay wx:if="{{classic.type==300}}" moveImg="{{classic.image}}" content="{{classic.content}}" />
+ <w-navi class="navi" title="{{classic.title}}" bind:left="toNext" bind:right="toPrev" first="{{first}}" latest="{{latest}}" />
+</view>

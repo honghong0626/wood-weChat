@@ -1,0 +1,68 @@
+<wxs src="../../untils/filter.wxs" module="until"></wxs>
+<view class="container">
+  <view class="header">
+    <image src="{{detail.image}}" class="header-img" />
+    <text class="title">{{detail.title}}</text>
+    <text class="author">{{detail.author}}</text>
+  </view>
+  <view class="sub-container">
+    <text class="title">短评</text>
+    <text class="title" wx:if="{{!comments}}">暂无短评</text>
+    <view class="comment-box">
+      <w-tag class="comment" wx:for="{{until.limit(comments,10)}}" wx:key="item" comment="{{item.content}}">
+        <text slot="nums" class="nums">{{"+"+item.nums}}</text>
+      </w-tag>
+    </view>
+  </view>
+  <view class="sub-container">
+    <text class="title">内容简介</text>
+    <text class="summary" decode="true">{{until.replaceSpace(detail.summary)}}</text>
+  </view>
+  <view class="sub-container">
+    <text class="title">书本信息</text>
+    <view class="info-container">
+      <view>
+        <text>出版社</text>
+        <text>{{detail.publisher}}</text>
+      </view>
+      <view>
+        <text>出版年</text>
+        <text>{{detail.pubdate}}</text>
+      </view>
+      <view>
+        <text>页数</text>
+        <text>{{detail.pages}}</text>
+      </view>
+      <view>
+        <text>定价</text>
+        <text>{{detail.price}}</text>
+      </view>
+      <view>
+        <text>精装</text>
+        <text>{{detail.binding}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="short-comment">
+  <view class="input" bind:tap="showFake">
+    <text>留下你的短评~</text>
+  </view>
+  <w-like bind:like="onLike" unlike="{{like_status}}" count="{{fav_nums}}" />
+</view>
+<w-mask wx:if="{{!isHidden}}"/>
+<view class="fake-container" wx:if="{{!isHidden}}">
+    <view class="handle">
+      <text class="cancel" bind:tap="hiddenFake">取消</text>
+      <text bind:tap="sendComment">确定</text>
+    </view>
+    <view class="line"></view>
+    <view class="comment-box">
+     <text class="title" wx:if="{{!comments}}">暂无短评</text>
+      <w-tag bind:tapping="sendComment" class="comment" wx:for="{{until.limit(comments,3)}}" wx:key="item" comment="{{item.content}}" bind:tap="sendComment">
+        <text slot="nums" class="nums">{{"+"+item.nums}}</text>
+      </w-tag>
+    </view>
+      
+    <input class="fake-input" type="text"  maxlength='12' bindblur="getValue" bindconfirm="sendComment" placeholder-class="placeholder-class" placeholder="输入您的短评，可输入12字" />
+</view>

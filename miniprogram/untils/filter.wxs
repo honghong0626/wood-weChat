@@ -1,0 +1,15 @@
+/* 针对book组件相关filter */
+//文本换行 text需要解码加入decode="true"
+var replaceSpace=function(summary){
+ if(!summary){return;}//数据初始化以及setData更新会分别执行{{}}
+ var reg = getRegExp("\\\\n",'g');
+ return summary.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+//控制短评的数量
+var limit  = function(comment,limit){
+ return comment.slice(0,limit)
+}
+module.exports = {
+ replaceSpace:replaceSpace,
+ limit:limit
+}

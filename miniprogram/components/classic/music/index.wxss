@@ -1,0 +1,65 @@
+/* components/classic/music/index.wxss */
+
+.classic-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.tag {
+ width: 46rpx;
+ height: 142rpx;
+ position: relative;
+ right: 310rpx;
+ bottom: 58rpx;
+}
+
+.content {
+ font-size: 36rpx;
+ max-width: 550rpx;
+ margin-top:20rpx;
+}
+
+.play-img {
+ width: 120rpx;
+ height: 120rpx;
+ position: absolute;
+ top: 160px;
+
+
+}
+
+.classic-img {
+ width: 422rpx;
+ height: 422rpx;
+ border-radius: 50%;
+ margin-top:40rpx;
+}
+
+.rotation {
+ animation: turn 3s linear infinite running;
+}
+
+.pauseRotate {
+ animation: turn 3s linear infinite paused;
+}
+
+@keyframes turn {
+ 0% {
+  transform: rotate(0)
+ }
+
+ 100% {
+  transform: rotate(1turn)
+ }
+}
+
+@-webkit-keyframes turn {
+ 0% {
+  -webkit-transform: rotate(0)
+ }
+
+ 100% {
+  -webkit-transform: rotate(1turn)
+ }
+}

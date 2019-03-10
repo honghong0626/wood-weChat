@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+   "w-btn":"../../components/btn/index",
+   "w-preview":"../../components/preview/index"
+  }
+}

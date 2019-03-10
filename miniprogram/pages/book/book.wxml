@@ -1,0 +1,17 @@
+<!-- miniprogram/pages/book/book.wxml -->
+
+<view class="container" wx:if="{{!keywords}}">
+ <view class="search-container" bind:tap="viewSearch">
+  <view class="box">
+   <image src="/images/icon/search.png" />
+   <text>搜索图书名称</text>
+  </view>
+ </view>
+  <view class="sub-container">
+  <image src="/images/book/quality.png" class="head-img" />
+  <view class="book-box">
+   <w-book wx:for="{{books}}" wx:key="id" book="{{item}}" />
+  </view>
+ </view> 
+</view>
+<w-search wx:else bind:hideSearch="hiddenSearch"></w-search>

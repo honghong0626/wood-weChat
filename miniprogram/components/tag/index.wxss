@@ -1,0 +1,11 @@
+/* components/tag/index.wxss */
+.container{
+ padding:0 30rpx;
+ background:#f7f7f7;
+ height:52rpx;
+ border-radius:30rpx;
+}
+.container text{
+ font: size 24rpx;
+ color:#666;
+}

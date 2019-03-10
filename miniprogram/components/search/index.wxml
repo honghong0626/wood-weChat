@@ -1,0 +1,42 @@
+<!-- components/search/index.wxml -->
+<view class="container">
+ <view class="header">
+  <view class="search-input">
+   <image src="images/search.png" class="search-img" />
+   <input type="text" value="{{q}}" bindconfirm="onConfirm" focus="true" placeholder="搜索图书名称" class="bar" />
+   <image bind:tap="reSearch" src="images/cancel.png" class="cancel-img" />
+  </view>
+  <view class="cancel" bind:tap="hiddenSearch">取消</view>
+ </view>
+ <!-- 历史搜索的盒子 -->
+ <view class="tag-box" wx:if="{{searching}}">
+  <view class="history-container">
+   <text class="title">历史搜索</text>
+   <view class="comment-box">
+    <block wx:for="{{historys}}" wx:key="*this">
+     <w-tag comment="{{item}}" bind:tapping="onConfirm"></w-tag>
+    </block>
+   </view>
+  </view>
+  <view class="hot-container">
+   <text class="title">热门搜索</text>
+   <view class="comment-box">
+    <block wx:for="{{hots}}" wx:key="*this">
+     <w-tag comment="{{item}}" bind:tapping="onConfirm"></w-tag>
+    </block>
+   </view>
+  </view>
+ </view>
+
+ <!-- 搜索结果盒子 -->
+ <scroll-view scroll-y='true' lower-threshold="0" scroll-top="{{scrollTop}}" style="height:{{viewHeight}}px" bindscrolltolower="moreLoading" class="scroll-view" wx:if="{{!searching}}">
+  <view class="temp" wx:if="{{temp}}">已经没有更多数据啦</view>
+  <view class="result-book">
+   <block wx:for="{{searchResults}}" wx:key="{{item.id}}">
+    <w-book book="{{item}}" class="book" />
+   </block>
+  </view>
+  <w-loading wx:if="{{loading}}" />
+ </scroll-view>
+
+</view>

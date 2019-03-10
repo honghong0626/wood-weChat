@@ -1,0 +1,121 @@
+/* components/search/index.wxss */
+
+.container {}
+
+.header {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 99;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ height: 110rpx;
+ background: #fff;
+ box-shadow: 0 2rpx 2rpx #e3e3e3;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.search-input {
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ width: 540rpx;
+ height: 68rpx;
+ background: #f7f7f7;
+ border-radius: 30rpx;
+ margin-left: 30rpx;
+}
+
+.search-input .bar {
+ font-size: 28rpx;
+ color: #999999;
+}
+
+.search-img {
+ width: 28rpx;
+ height: 28rpx;
+ display: inline-block;
+ margin: 0 20rpx 0 30rpx;
+}
+
+.cancel-img {
+ position: absolute;
+ right: 30rpx;
+ width: 24rpx;
+ height: 24rpx;
+}
+
+.cancel {
+ font-size: 28rpx;
+ width: 120rpx;
+ height: 68rpx;
+ border: 1px solid #666666;
+ text-align: center;
+ line-height: 68rpx;
+ border-radius: 30rpx;
+ margin-right: 30rpx;
+}
+
+.container .title {
+ display: inline-block;
+ height: 28rpx;
+ text-indent: 20rpx;
+ font-size: 28rpx;
+ line-height: 28rpx;
+ border-left: 8rpx solid #000;
+}
+
+.history-container {
+ margin-top: 140rpx;
+ margin-left: 16rpx;
+}
+
+.hot-container {
+ margin-left: 16rpx;
+}
+
+.comment-box {
+ margin: 20rpx 0 20rpx 44rpx;
+ display: flex;
+ flex-flow: row wrap;
+}
+
+.comment-box w-tag {
+ margin-right: 20rpx;
+ margin-bottom: 20rpx;
+}
+
+.scroll-view {
+ margin-top: 130rpx;
+ margin-bottom: 10rpx;
+}
+
+.result-book {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ padding: 0 90rpx;
+ width: 570rpx;
+}
+
+.result-book w-book {
+ width: 240rpx;
+ margin-bottom: 30rpx;
+}
+
+w-loading {
+ display: block;
+ width: 40rpx;
+ margin: 0 auto;
+}
+
+.temp {
+ text-align: Center;
+ font-size: 30rpx;
+ color: #999999;
+}
