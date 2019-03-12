@@ -20,7 +20,9 @@
 - [x] 滑动到底部加载更多：搜索书籍页面，使用scroll-view完成加载更多功能；
 - [x] 短评：书籍详情页加入了短评功能
 - [x] 授权：授权获取登录信息
+- [x] 分享：点击分享按钮可以分享给朋友
 
+<img src="https://s17.aconvert.com/convert/p3r68-cdx67/1sqx2-fmgyy.gif">
 在此声明：
   此项目是模仿慕课网上七月老师 旧岛小程序开发的项目 进行的开发;数据也是七月老师提供的key（key我不会开放）获取；
 项目是自己一步步的开发的，虽然并不是很完美，但自己在对微信小程序API、组件更加熟练使用，提高了逻辑思维以及代码分离能力；
@@ -29,8 +31,8 @@
 
 此项目可以下载到本地在微信小程序手上运行步骤：
 
-1.下载微信小程序开发工具（https://developers.weixin.qq.com/miniprogram/dev/申请账号）；
-2.在project.config.json中填入自己："appid": "*************"；
+1.下载微信小程序开发工具（https://developers.weixin.qq.com/miniprogram/dev/申请账号）；                         
+2.在project.config.json中填入自己："appid": "*************"；                             
 3.模拟假数据/自己建数据库；
 
 
