@@ -2,7 +2,7 @@
 
 -----
 
-###项目共分为四个页面：
+### 项目共分为四个页面：
 > * 期刊（classic）
 > * 书籍（book）
 > * 个人中心（my）
@@ -22,7 +22,15 @@
 - [x] 授权：授权获取登录信息
 - [x] 分享：点击分享按钮可以分享给朋友
 
+###### classic
 <img src="https://s17.aconvert.com/convert/p3r68-cdx67/1sqx2-fmgyy.gif">
+
+###### book
+<img src="https://s19.aconvert.com/convert/p3r68-cdx67/ezkfi-44aaa.gif">
+
+###### book-detail
+<img src="https://s17.aconvert.com/convert/p3r68-cdx67/ueis9-henx4.gif">
+
 在此声明：
   此项目是模仿慕课网上七月老师 旧岛小程序开发的项目 进行的开发;数据也是七月老师提供的key（key我不会开放）获取；
 项目是自己一步步的开发的，虽然并不是很完美，但自己在对微信小程序API、组件更加熟练使用，提高了逻辑思维以及代码分离能力；
