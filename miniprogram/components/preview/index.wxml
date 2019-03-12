@@ -2,7 +2,7 @@
 <view class="container">
  <view class="header">
   <w-tag comment="{{typeText}}" />
-  <w-like unlike="{{true}}" count="{{favorites.fav_nums}}" />
+  <w-like unlike="{{true}}" count="{{favorites.fav_nums}}" read-only="{{true}}"/>
  </view>
  <image src="{{favorites.image}}" class="{{ favorites.type==200?'musicImg':'classicImg'}}" />
  <text>{{favorites.content}}</text>
