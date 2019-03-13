@@ -25,11 +25,6 @@
 ###### classic
 <img src="https://s17.aconvert.com/convert/p3r68-cdx67/1sqx2-fmgyy.gif">
 
-###### book
-<img src="https://s19.aconvert.com/convert/p3r68-cdx67/ytc3d-8sxzu.gif">
-
-###### book-detail
-<img src="https://s17.aconvert.com/convert/p3r68-cdx67/d8b97-bfffz.gif">
 
 在此声明：
   此项目是模仿慕课网上七月老师 旧岛小程序开发的项目 进行的开发;数据也是七月老师提供的key（key我不会开放）获取；
@@ -44,7 +39,7 @@
 3.模拟假数据/自己建数据库；
 
 
-期待你们的issue，期待你们的start
+期待你们的issue，期待你们的star
 
 
 
